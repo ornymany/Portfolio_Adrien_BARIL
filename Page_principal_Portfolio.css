@@ -85,7 +85,36 @@ header{
 	 transition: width 0.3s;
  }
 
+ #matete{
+    position: absolute;
+    width: 83px;
+    height: 83px;
+    left: 0px;
+    top: 0px;
+}
+
  a:hover::after{
 	 width: 100%;
 	 transition: width 0.3s;
+ }
+
+ #tel{
+    position: absolute;
+    right: 25px;
+    bottom: 30px;
+}
+
+#tel>img{
+	width: 30px;
+    height: 30px;
+}
+#tel>p{
+	display: inline;
+	bottom: 35px;
+	padding-bottom: 10px;
+}
+ @media screen and (width < 835px) {
+	 #matete{
+		 display: none;
+	 }
  }

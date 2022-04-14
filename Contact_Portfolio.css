@@ -76,6 +76,22 @@ header a {
     width: 50%;
 }
 
+#tel{
+    position: absolute;
+    right: 25px;
+    bottom: 30px;
+}
+
+#tel>img{
+	width: 30px;
+    height: 30px;
+}
+#tel>p{
+	display: inline;
+	bottom: 35px;
+	padding-bottom: 10px;
+}
+
 .btn::after {
 
     content: '';
