@@ -13,7 +13,6 @@ header{
 		display: flex;
 		flex-direction: column;
 		background-color: rgb(36, 33, 33);
-		/**background: no-repeat cover url("fond.jpg"); */
 	}
 
 
@@ -113,6 +112,27 @@ header{
 	bottom: 35px;
 	padding-bottom: 10px;
 }
+
+#CV{
+    position: absolute;
+    left: 25px;
+    bottom: 30px;
+}
+
+#CV>a{
+	text-decoration: none;
+}
+
+#CV>a>img{
+	width: 30px;
+    height: 30px;
+}
+#CV>a>p{
+	display: inline;
+	bottom: 35px;
+	padding-bottom: 10px;
+}
+
  @media screen and (width < 835px) {
 	 #matete{
 		 display: none;
