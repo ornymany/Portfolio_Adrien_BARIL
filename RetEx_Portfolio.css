@@ -83,7 +83,7 @@ a:hover::after{
  transition: width 0.3s;
 }
 
-@media screen and (width < 1144px) or (handheld){
+@media screen and (width < 1144px){
 
     #RetEx{
         display: inline;
