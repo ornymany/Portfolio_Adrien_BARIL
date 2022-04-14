@@ -97,6 +97,7 @@ a:hover::after{
     #RetEx>p {
         display: block;
         color:antiquewhite;
+        font-size: x-large;
     }
 
     .content {
