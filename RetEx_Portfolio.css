@@ -21,17 +21,34 @@ h2 {
     display: inline;
 }
 
-p {
+.content p{
+    visibility: hidden;
+    color: antiquewhite;
+    font-size: xx-large;
+    position: absolute;
+}
+
+.content:hover p{
+    visibility: visible;   
+}
+
+.content {
+    display: inline-flex;
+    justify-content: center;
+    margin-top: 10px;
+    margin-bottom: 80px;;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+#RetEx > p {
     display: none;
 }
 
 img{
     height: 280px;
     width: 550px;
-    margin: 10px;
-    margin-bottom: 80px;
     box-shadow: 1px 1px 12px black;
-
 }
 
 
@@ -64,12 +81,16 @@ a:hover::after{
 
 @media screen and (width < 1144px){
 
-    p {
+    .content>p {
+        display: none;
+    }
+
+    #RetEx>p {
         display: block;
         color:antiquewhite;
     }
 
-    img {
+    .content {
         margin-top: 30px;
         margin-bottom: 10px;
     }
