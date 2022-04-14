@@ -48,6 +48,10 @@ header{
 		font-size: larger;
 	}
 
+	.Presentation-page > p{
+		margin-top: 40px;
+	}
+
 	#debut {
 		display: flex;
     	flex-direction: column;
