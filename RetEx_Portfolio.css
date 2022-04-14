@@ -83,7 +83,8 @@ a:hover::after{
  transition: width 0.3s;
 }
 
-@media (width < 1144px){
+
+@media screen and (width < 1144px){
 
     #RetEx{
         display: inline;
