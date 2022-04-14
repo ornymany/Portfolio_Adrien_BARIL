@@ -17,15 +17,14 @@ body {
     text-align: center;
 }
 
-h2 {
-    display: inline;
-}
-
-.content p{
+.content>p{
     visibility: hidden;
     color: antiquewhite;
     font-size: xx-large;
     position: absolute;
+    top: 25%;
+    left: 5%;
+    right: 5%;
 }
 
 .content:hover p{
@@ -33,12 +32,14 @@ h2 {
 }
 
 .content {
-    display: inline-flex;
-    justify-content: center;
+    position: relative;
     margin-top: 10px;
     margin-bottom: 80px;;
     margin-left: 10px;
     margin-right: 10px;
+    justify-content: center;
+    text-align: center;
+
 }
 
 #RetEx > p {
@@ -52,11 +53,16 @@ img{
 }
 
 
-.img:hover {
+.content:hover img {
     opacity: 0.6;
     filter: alpha(opacity=30);
     }
 
+#RetEx{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
 
 header a {
     text-decoration: none;
@@ -64,13 +70,12 @@ header a {
 }
 
 .btn::after {
-
     content: '';
- width: 0;
- display: block;
- height: 2px;
- background: antiquewhite;
- transition: width 0.3s;
+    width: 0;
+     display: block;
+    height: 2px;
+    background: antiquewhite;
+    transition: width 0.3s;
 }
 
 a:hover::after{
@@ -80,6 +85,10 @@ a:hover::after{
 
 
 @media screen and (width < 1144px){
+
+    #RetEx{
+        display: inline;
+    }
 
     .content>p {
         display: none;
