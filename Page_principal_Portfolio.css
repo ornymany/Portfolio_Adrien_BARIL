@@ -6,9 +6,8 @@ header{
 	box-shadow: 1px 1px 12px black;
 }
 
-
 	body {
-		min-height: 100vh;
+		height: 100%;
 		margin: 0;
 		display: flex;
 		flex-direction: column;
@@ -97,26 +96,23 @@ header{
 	 transition: width 0.3s;
  }
 
- #tel{
-    position: absolute;
-    right: 25px;
-    bottom: 30px;
+footer{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	background-color: #a38b67;
+	box-shadow: 1px 1px 12px black;
 }
 
 #tel>img{
 	width: 30px;
     height: 30px;
 }
+
 #tel>p{
 	display: inline;
 	bottom: 35px;
 	padding-bottom: 10px;
-}
-
-#CV{
-    position: absolute;
-    left: 25px;
-    bottom: 30px;
 }
 
 #CV>a{
@@ -127,14 +123,75 @@ header{
 	width: 30px;
     height: 30px;
 }
+
 #CV>a>p{
 	display: inline;
 	bottom: 35px;
 	padding-bottom: 10px;
 }
 
- @media screen and (width < 835px) {
+.icons {
+	display: flex;
+	column-gap: 25px;	
+}
+
+.icon {
+	width: 60px;
+	height: 60px;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	text-decoration: none;
+	font-size: 26px;
+	color: #fff;
+	border-radius: 50%;
+	outline: 2px solid #fff;
+	transition-property: outline-offset, outline-color, background-color;
+	transition-duration: 0.25s;
+}
+
+.icon:hover {
+	outline-offset: 4px;
+}
+
+.icon img {
+	width: 100%;
+	height: 100%;
+	border-radius: 50%;
+}
+
+.icon:hover img {
+	animation: shake .25s;
+}
+
+.icon--instagram:hover {
+	background-image: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+	outline-color: #a02d76;
+}
+
+.icon--github:hover {
+	background-color: #2ea44f;
+	outline-color: #2ea44f;
+} 
+
+.icon--gitlab:hover {
+	background-color: #fff;
+	outline-color: #fff;
+}
+
+.icon--gitlab img {
+	height: 70%;
+}
+
+@keyframes shake {
+	10%{ transform: rotate(15deg); }
+	20%{ transform: rotate(-15deg); }
+	30%{ transform: rotate(15deg); }
+	40%{ transform: rotate(-15deg); }
+}
+
+@media screen and (width < 835px) {
 	 #matete{
 		 display: none;
 	 }
- }
+}
