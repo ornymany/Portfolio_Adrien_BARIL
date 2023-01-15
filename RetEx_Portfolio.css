@@ -4,7 +4,7 @@ header{
     align-items: center;
     background-color: #a38b67;
     box-shadow: 1px 1px 12px black;
-    margin-bottom: 80px;
+    margin-bottom: 30px;
 }
 
 
@@ -22,7 +22,7 @@ body {
     color: antiquewhite;
     font-size: xx-large;
     position: absolute;
-    top: 30%;
+    top: 40%;
     left: 5%;
     right: 5%;
 }
@@ -83,6 +83,30 @@ a:hover::after{
  transition: width 0.3s;
 }
 
+body>h1 {
+    font-size: 45px;
+    color: antiquewhite;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 20px;
+}
+
+p>a {
+    text-decoration: none;
+    color: #a38b67;
+}
+
+p {
+    font-size: 20px;
+    color: antiquewhite;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 25px;
+}
 
 @media screen and (width < 1144px){
 
