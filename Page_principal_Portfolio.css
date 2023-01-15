@@ -1,102 +1,105 @@
-header{
+html {
+	height: 100vh;
+}
+
+header {
+	height: 10vh;
 	display: inline-flex;
-	justify-content:space-around;
+	justify-content: space-around;
 	align-items: center;
 	background-color: #a38b67;
 	box-shadow: 1px 1px 12px black;
 }
 
-	body {
-		height: 100%;
-		margin: 0;
-		display: flex;
-		flex-direction: column;
-		background-color: rgb(36, 33, 33);
-	}
-
-
-    h2 {
-        display: inline;
-    }
-
-	header a {
-        text-decoration: none;
-    }
-
-	h1 {
-		display: flex;
-		justify-content: center;
-		color: antiquewhite;
-
-	}
-
-	.Presentation-page {
-		display: flex;
-		flex-direction: column;
-		
-	}
-
-	a {
-		color: antiquewhite;
-	}
-
-	p{
-		color : antiquewhite;
-		margin: 8px;
-		font-size: larger;
-	}
-
-	.Presentation-page > p{
-		margin-top: 40px;
-	}
-
-	#debut {
-		display: flex;
-    	flex-direction: column;
-    	justify-content: center;
-    	font-size: 100%;
-    	color: rgb(0, 0, 0);
-    	margin-left: 30%;
-    	margin-right: 30%;
-    	margin-top: 40px;
-    	margin-bottom: 60px;
-    	border: 10px;
-    	border-color: black;
-    	box-shadow: 1px 1px 12px black;
-    	padding: 20px;
-		min-width: 81px;
-	}
-
-	#debut p {
-		display: flex;
-		justify-content: center;
-		text-align: center;
-	}
-	
-	.btn::after {
-
-		content: '';
-	 width: 0;
-	 display: block;
-	 height: 2px;
-	 background: antiquewhite;
-	 transition: width 0.3s;
- }
-
- #matete{
-    position: absolute;
-    width: 83px;
-    height: 83px;
-    left: 0px;
-    top: 0px;
+body {
+	height: 100%;
+	margin: 0;
+	display: flex;
+	flex-direction: column;
+	background-color: rgb(36, 33, 33);
 }
 
- a:hover::after{
-	 width: 100%;
-	 transition: width 0.3s;
- }
 
-footer{
+h2 {
+	display: inline;
+}
+
+header a {
+	text-decoration: none;
+}
+
+h1 {
+	display: flex;
+	justify-content: center;
+	color: antiquewhite;
+
+}
+
+.Presentation-page {
+	display: flex;
+	flex-direction: column;
+	height: 80%;
+}
+
+a {
+	color: antiquewhite;
+}
+
+p {
+	color: antiquewhite;
+	margin: 8px;
+	font-size: larger;
+}
+
+.Presentation-page>p {
+	margin-top: 40px;
+}
+
+#debut {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	font-size: 100%;
+	color: rgb(0, 0, 0);
+	margin-left: 30%;
+	margin-right: 30%;
+	margin-top: 40px;
+	margin-bottom: 60px;
+	border: 10px;
+	border-color: black;
+	box-shadow: 1px 1px 12px black;
+	padding: 20px;
+	min-width: 81px;
+}
+
+#debut p {
+	display: flex;
+	justify-content: center;
+	text-align: center;
+}
+
+.btn::after {
+
+	content: '';
+	width: 0;
+	display: block;
+	height: 2px;
+	background: antiquewhite;
+	transition: width 0.3s;
+}
+
+#matete {
+	width: 84px;
+	height: 100%;
+}
+
+a:hover::after {
+	width: 100%;
+	transition: width 0.3s;
+}
+
+footer {
+	height: 10%;
 	display: flex;
 	justify-content: space-around;
 	align-items: center;
@@ -104,27 +107,27 @@ footer{
 	box-shadow: 1px 1px 12px black;
 }
 
-#tel>img{
+#tel>img {
 	width: 30px;
-    height: 30px;
+	height: 30px;
 }
 
-#tel>p{
+#tel>p {
 	display: inline;
 	bottom: 35px;
 	padding-bottom: 10px;
 }
 
-#CV>a{
+#CV>a {
 	text-decoration: none;
 }
 
-#CV>a>img{
+#CV>a>img {
 	width: 30px;
-    height: 30px;
+	height: 30px;
 }
 
-#CV>a>p{
+#CV>a>p {
 	display: inline;
 	bottom: 35px;
 	padding-bottom: 10px;
@@ -132,7 +135,7 @@ footer{
 
 .icons {
 	display: flex;
-	column-gap: 25px;	
+	column-gap: 25px;
 }
 
 .icon {
@@ -172,7 +175,7 @@ footer{
 .icon--github:hover {
 	background-color: #2ea44f;
 	outline-color: #2ea44f;
-} 
+}
 
 .icon--gitlab:hover {
 	background-color: #fff;
@@ -184,14 +187,25 @@ footer{
 }
 
 @keyframes shake {
-	10%{ transform: rotate(15deg); }
-	20%{ transform: rotate(-15deg); }
-	30%{ transform: rotate(15deg); }
-	40%{ transform: rotate(-15deg); }
+	10% {
+		transform: rotate(15deg);
+	}
+
+	20% {
+		transform: rotate(-15deg);
+	}
+
+	30% {
+		transform: rotate(15deg);
+	}
+
+	40% {
+		transform: rotate(-15deg);
+	}
 }
 
 @media screen and (width < 835px) {
-	 #matete{
-		 display: none;
-	 }
+	#matete {
+		display: none;
+	}
 }
